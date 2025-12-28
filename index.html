@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xaqoo — digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Фон с мягкими градиентами -->
+    <div class="gradient-background"></div>
+    
+    <div class="container">
+        <!-- Центральный стеклянный блок -->
+        <main class="glass-panel">
+            <!-- Аватар -->
+            <div class="avatar-section">
+                <div class="avatar-wrapper">
+                    <div class="avatar-orb">
+                        <img src="avatar.jpg" alt="xaqoo" class="avatar-img">
+                    </div>
+                    <div class="avatar-ring"></div>
+                </div>
+                
+                <div class="identity">
+                    <h1 class="main-name">xaqoo</h1>
+                    <div class="identity-tag">@sleepnightkiller</div>
+                    <div class="identity-line"></div>
+                </div>
+            </div>
+
+            <!-- Панель ссылок -->
+            <div class="links-section">
+                <!-- Ссылка 1: Профиль -->
+                <div class="link-item static">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <i class="fas fa-circle-user"></i>
+                        </div>
+                        <div class="link-text">
+                            <div class="link-title">profile</div>
+                            <div class="link-desc">primary identity</div>
+                        </div>
+                    </div>
+                    <div class="link-value">xaqoo</div>
+                </div>
+
+                <!-- Ссылка 2: Telegram -->
+                <a href="https://t.me/sleepnightkiller" target="_blank" class="link-item dynamic">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="link-text">
+                            <div class="link-title">telegram channel</div>
+                            <div class="link-desc">communication hub</div>
+                        </div>
+                    </div>
+                    <div class="link-action">
+                        <span class="link-url">sleepnightkiller</span>
+                        <i class="fas fa-arrow-up-right"></i>
+                    </div>
+                </a>
+
+                <!-- Ссылка 3: PlayerOK -->
+                <a href="https://playerok.com/profile/Mexub/products" target="_blank" class="link-item dynamic">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="link-text">
+                            <div class="link-title">playerok store</div>
+                            <div class="link-desc">products & items</div>
+                        </div>
+                    </div>
+                    <div class="link-action">
+                        <span class="link-url">Mexub/products</span>
+                        <i class="fas fa-arrow-up-right"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Статусная строка -->
+            <div class="status-section">
+                <div class="status-item">
+                    <div class="status-dot active"></div>
+                    <span class="status-label">system</span>
+                </div>
+                <div class="status-divider"></div>
+                <div class="status-item">
+                    <span class="status-label">connected</span>
+                </div>
+                <div class="status-divider"></div>
+                <div class="status-item">
+                    <span class="status-label" id="currentTime">--:--:--</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
