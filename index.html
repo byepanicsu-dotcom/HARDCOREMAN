@@ -7,94 +7,88 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Фон с мягкими градиентами -->
-    <div class="gradient-background"></div>
+<body class="monet-theme">
+    <!-- Минималистичный фон -->
+    <div class="monet-background"></div>
     
     <div class="container">
-        <!-- Центральный стеклянный блок -->
-        <main class="glass-panel">
-            <!-- Аватар -->
-            <div class="avatar-section">
-                <div class="avatar-wrapper">
-                    <div class="avatar-orb">
-                        <img src="avatar.jpg" alt="xaqoo" class="avatar-img">
+        <!-- Основной контейнер -->
+        <main class="main-card">
+            <!-- Профиль -->
+            <div class="profile-section">
+                <div class="avatar-container">
+                    <div class="avatar-monet">
+                        <img src="avatar.jpg" alt="xaqoo" class="avatar-image">
+                        <div class="avatar-status"></div>
                     </div>
-                    <div class="avatar-ring"></div>
+                    <div class="avatar-glow"></div>
                 </div>
                 
-                <div class="identity">
-                    <h1 class="main-name">xaqoo</h1>
-                    <div class="identity-tag">@sleepnightkiller</div>
-                    <div class="identity-line"></div>
+                <div class="profile-info">
+                    <h1 class="profile-name">xaqoo</h1>
+                    <div class="profile-handle">@sleepnightkiller</div>
+                    <div class="profile-line"></div>
                 </div>
             </div>
 
-            <!-- Панель ссылок -->
+            <!-- Ссылки -->
             <div class="links-section">
-                <!-- Ссылка 1: Профиль -->
-                <div class="link-item static">
-                    <div class="link-content">
-                        <div class="link-icon">
-                            <i class="fas fa-circle-user"></i>
-                        </div>
-                        <div class="link-text">
-                            <div class="link-title">profile</div>
-                            <div class="link-desc">primary identity</div>
-                        </div>
+                <!-- Профиль -->
+                <div class="link-card static">
+                    <div class="link-icon-container primary">
+                        <i class="fas fa-user"></i>
                     </div>
-                    <div class="link-value">xaqoo</div>
+                    <div class="link-info">
+                        <div class="link-title">Profile</div>
+                        <div class="link-desc">Primary identity</div>
+                    </div>
+                    <div class="link-badge">
+                        <i class="fas fa-check"></i>
+                    </div>
                 </div>
 
-                <!-- Ссылка 2: Telegram -->
-                <a href="https://t.me/sleepnightkiller" target="_blank" class="link-item dynamic">
-                    <div class="link-content">
-                        <div class="link-icon">
-                            <i class="fab fa-telegram"></i>
-                        </div>
-                        <div class="link-text">
-                            <div class="link-title">telegram channel</div>
-                            <div class="link-desc">communication hub</div>
-                        </div>
+                <!-- Telegram -->
+                <a href="https://t.me/sleepnightkiller" target="_blank" class="link-card dynamic">
+                    <div class="link-icon-container secondary">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="link-info">
+                        <div class="link-title">Telegram</div>
+                        <div class="link-desc">@sleepnightkiller</div>
                     </div>
                     <div class="link-action">
-                        <span class="link-url">sleepnightkiller</span>
-                        <i class="fas fa-arrow-up-right"></i>
+                        <span class="link-domain">t.me</span>
+                        <i class="fas fa-external-link-alt"></i>
                     </div>
                 </a>
 
-                <!-- Ссылка 3: PlayerOK -->
-                <a href="https://playerok.com/profile/Xaqoo/products" target="_blank" class="link-item dynamic">
-                    <div class="link-content">
-                        <div class="link-icon">
-                            <i class="fas fa-cube"></i>
-                        </div>
-                        <div class="link-text">
-                            <div class="link-title">playerok store</div>
-                            <div class="link-desc">products & items</div>
-                        </div>
+                <!-- PlayerOK -->
+                <a href="https://playerok.com/profile/Xaqoo/products" target="_blank" class="link-card dynamic">
+                    <div class="link-icon-container tertiary">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="link-info">
+                        <div class="link-title">PlayerOK</div>
+                        <div class="link-desc">Products & items</div>
                     </div>
                     <div class="link-action">
-                        <span class="link-url">Xaqoo/products</span>
-                        <i class="fas fa-arrow-up-right"></i>
+                        <span class="link-domain">playerok.com</span>
+                        <i class="fas fa-external-link-alt"></i>
                     </div>
                 </a>
             </div>
 
-            <!-- Статусная строка -->
+            <!-- Статус -->
             <div class="status-section">
                 <div class="status-item">
                     <div class="status-dot active"></div>
-                    <span class="status-label">system</span>
+                    <span class="status-text">online</span>
                 </div>
                 <div class="status-divider"></div>
                 <div class="status-item">
-                    <span class="status-label">connected</span>
-                </div>
-                <div class="status-divider"></div>
-                <div class="status-item">
-                    <span class="status-label" id="currentTime">--:--:--</span>
+                    <span class="status-text" id="currentTime">--:--:--</span>
                 </div>
             </div>
         </main>
